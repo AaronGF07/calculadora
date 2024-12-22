@@ -28,6 +28,9 @@ public class calculadora {
 		case "-":
 			System.out.println("El resultado de la resta es: " + restar(num1,num2));
 			break;
+		case "*":
+			System.out.println("El resultado de la multiplicacion es: " + multiplicar(num1,num2));
+			break;
 		
 		}
 	}
@@ -38,5 +41,9 @@ public class calculadora {
 	
 	public static int restar(int num1, int num2) {
 		return num1 - num2;
+	}
+	
+	public static int multiplicar(int num1, int num2) {
+		return num1 * num2;
 	}
 }
