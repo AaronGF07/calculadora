@@ -23,13 +23,20 @@ public class calculadora {
 	public static void gestorOperaciones(String operacion, int num1, int num2) {
 		switch(operacion) {
 		case "+":
-			System.out.println("El resultado de la suma es: "+sumar(num1,num2));
+			System.out.println("El resultado de la suma es: " + sumar(num1,num2));
+			break;
+		case "-":
+			System.out.println("El resultado de la resta es: " + restar(num1,num2));
 			break;
 		
 		}
 	}
 	
-	public static int  sumar(int num1, int num2) {
+	public static int sumar(int num1, int num2) {
 		return num1 + num2;
+	}
+	
+	public static int restar(int num1, int num2) {
+		return num1 - num2;
 	}
 }
